@@ -1,0 +1,172 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2F3336;
+    margin: 0;
+}
+
+#banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#subject
+{
+    font-weight: 600;
+    font-size: 64px;
+    padding-right: 40px;
+    margin: 20px 0 0 0;
+}
+
+#logo
+{
+    width: 128px;
+    height: 128px;
+}
+
+nav
+{
+    background-color: #FF8853;
+    text-align: center;
+    border-radius: 30px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu
+{
+    list-style-type: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600; 
+    padding: 15px 80px 15px 80px;
+}
+
+.menu > li
+{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px dashed;
+}
+
+.menu > li:first-child
+{
+    border-left: 1px dashed;
+}
+
+main
+{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionHeading
+{
+    color: #FE6019;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.regularText
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.semidBoldText
+{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#boxes
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.sideBox
+{
+    background-color: #242729;
+    width: 256px;
+    height: 256px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.sideBox:hover
+{
+    opacity: 1;
+}
+
+.sideBox img
+{
+    max-width: 80%;
+}
+
+.middleBox
+{
+    background-color: #242729;
+    width: 300px;
+    height: 300px;
+    margin: 0px 45px 0px 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.middleBox:hover
+{
+    opacity: 1;
+}
+
+.middleBox img
+{
+    max-width: 80%;
+}
+
+#downArrow
+{
+    margin: 100px auto 100px auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.bigBox
+{
+    background-color: #242729;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    margin: 10px 0 40px 0;
+}
+
+.bigBox img
+{
+    max-width: 90%;
+}
