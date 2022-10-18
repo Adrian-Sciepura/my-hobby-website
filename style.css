@@ -32,7 +32,8 @@ nav
     background-color: #FF8853;
     text-align: center;
     border-radius: 30px;
-    width: 65%;
+    min-width: 1000px;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
@@ -59,9 +60,20 @@ nav
     border-left: 1px dashed;
 }
 
+.menu a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover
+{
+    color: #FE6019;
+}
+
 main
 {
-    width: 65%;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -110,6 +122,7 @@ main
     justify-content: center;
     align-items: center;
     opacity: 0.9;
+    filter: drop-shadow(0px 5px 5px black);
 }
 
 .sideBox:hover
@@ -133,6 +146,7 @@ main
     justify-content: center;
     align-items: center;
     opacity: 0.9;
+    filter: drop-shadow(0px 5px 5px black);
 }
 
 .middleBox:hover
@@ -147,10 +161,8 @@ main
 
 #downArrow
 {
-    margin: 100px auto 100px auto;
+    margin: 90px auto 90px auto;
     display: flex;
-    justify-items: center;
-    align-items: center;
 }
 
 .bigBox
@@ -164,9 +176,72 @@ main
     align-items: center;
     opacity: 0.9;
     margin: 10px 0 40px 0;
+    filter: drop-shadow(0px 5px 5px black);
 }
 
 .bigBox img
 {
     max-width: 90%;
+}
+
+footer
+{
+    height: 60px;
+    background-color: #222527;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer p
+{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.mapSection
+{
+    background-color: #242729;
+    height: 600px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin: 40px 0 40px 0;
+    opacity: 0.9;
+    filter: drop-shadow(0px 5px 5px black);
+}
+
+.mapSection:hover
+{
+    opacity: 1;
+}
+
+.mapSectionImage
+{
+    max-height: 90%;
+    margin: 0px 20px 0px 20px ;
+    border-radius: 20px;
+}
+
+.mapSectionText
+{
+    margin: 0 auto 0 auto;
+}
+
+.mapSectionText h1
+{
+    color:#FE6019;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mapSectionText p
+{
+    color: white;
+    font-size: 22px;
 }
