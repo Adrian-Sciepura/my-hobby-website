@@ -1,57 +1,93 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Kolarstwo Szosowe</title>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kolarstwo Szosowe</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div id="banner">
-            <h1 id="subject">Kolarstwo Szosowe</h1>
-            <img id="logo" src="img/logo.png">
-        </div>
-        <nav>
-            <ul class="menu">
-                <li>Strona Główna</li>
-                <li>Moje Wyprawy</li>
-                <li>Słynni kolarze</li>
-                <li>Ankieta</li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="mapSection">
-            <img class="mapSectionImage" src="img/maps/map1.jpg">
-            <div class="mapSectionText">
-                <h1>Okrążenie jeziora Śniardwy</h1>
-                <p>Data: 22 lipiec 2021 <br>
-                    Dystans: 94.78 km <br>
-                    Czas trwania: 7h 47min <br>
-                    Średnia prędkość: 17km/h
-                </p>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo__title">Kolarstwo Szosowe</h1>
+                <img class="logo__img" src="img/logo.png">
             </div>
-        </section>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link navigation__link--current" href="index.html">Strona Główna</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="myActivities.html">Moje Wyprawy</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Słynni kolarze</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Ankieta</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="wrapper">
+            <section>
+                <button class="activity">
+                    <div class="activity__top">
+                        <img class="activity__logo" src="img/maps/map1.jpg" alt="mapa trasy">
+                        <div class="activity__text">
+                            <h1 class="activity__title">Okrążenie jeziora Śniardwy</h1>
+                            <ul class="activity__description">
+                                <li class="activity__point">Data: 22 lipiec 2021</li>
+                                <li class="activity__point">Dystans: 94.78 km</li>
+                                <li class="activity__point">Czas trwania: 7h 47min</li>
+                                <li class="activity__point">Prędkość średnia: 17.2km/h</li>
+                                <li class="activity__point">Prędkość maksymalna: 46.1km/h</li>
+                                <li class="activity__point">Łącznie wzniesień: 490m</li>
+                                <li class="activity__point">Wygenerowana energia: 1.040kJ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="activity__bottom">
+                        <p class="activity__title">________________________</p>
+                        <div class="activity__gallery">
+                            <img class="activity__img activity__img--horizontal" src="img/routes/route1/1.jpg" alt="photo1">
+                            <img class="activity__img activity__img--horizontal" src="img/routes/route1/2.jpg" alt="photo2">
+                        </div>
+                    </div>
+                </button>
+            </section>
 
-        <section class="mapSection">
-            <div class="mapSectionText">
-                <h1>Przejechanie wszerz woj. pomorskiego</h1>
-                <p>Opis</p>
-            </div>
-            <img class="mapSectionImage" src="img/maps/map2.jpg">
+            <section>
+                <button class="activity">
+                    <div class="activity__top">
+                        <img class="activity__logo" src="img/maps/map2.jpg" alt="mapa trasy">
+                        <div class="activity__text">
+                            <h1 class="activity__title">Przejechanie wszerz woj. pomorskiego</h1>
+                            <ul class="activity__description">
+                                <li class="activity__point">Data: 1 sierpień 2021</li>
+                                <li class="activity__point">Dystans: 176.91 km</li>
+                                <li class="activity__point">Czas trwania: 9h 50min</li>
+                                <li class="activity__point">Prędkość średnia: 21.7km/h</li>
+                                <li class="activity__point">Prędkość maksymalna: 49.7km/h</li>
+                                <li class="activity__point">Łącznie wzniesień: 905m</li>
+                                <li class="activity__point">Wygenerowana energia: 2.310kJ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="activity__bottom">
+                        <p class="activity__title">________________________</p>
+                        <div class="activity__gallery">
+                            <img class="activity__img activity__img--horizontal" src="img/routes/route2/1.jpg" alt="photo1">
+                            <img class="activity__img activity__img--vertical" src="img/routes/route2/2.jpg" alt="photo2">
+                            <img class="activity__img activity__img--vertical" src="img/routes/route2/3.jpg" alt="photo3">
+                            <img class="activity__img activity__img--vertical" src="img/routes/route2/4.jpg" alt="photo4">
+                            <img class="activity__img activity__img--vertical" src="img/routes/route2/5.jpg" alt="photo5">
+                            <img class="activity__img activity__img--vertical" src="img/routes/route2/6.jpg" alt="photo6">
+                        </div>
+                    </div>
+                </button>
+            </section>
+        </main>
+        <footer>
+            <p >Adrian Ściepura nr. indeksu: 193350</p>
+        </footer>
 
-        </section>
-
-    </main>
-
-    <footer>
-        <p >Adrian Ściepura nr. indeksu: 193350</p>
-    </footer>
 
 
-
-</body>
+    </body>
+</html>

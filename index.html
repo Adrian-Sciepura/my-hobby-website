@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style-new.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -29,38 +29,45 @@
                 <h1 class="section-title">Rodzaje Rowerów</h1>
                 <p class="regular-text">Istnieją trzy główne typy rowerów, każdy stworzony z myślą o innym zastosowaniu. MTB - czyli Montain Terrain Bike to sprzęt przeznaczony do poruszania się po nierównych nawierzchniach. Rower szosowy został zaprojektowany z myślą o osiąganiu dużych prędkości, jednak posiada mało wytrzymałą konstrukcję. Natomiast Cross jest to połączenie obu tych konstrukcji</p>
                 <section class="boxes">
-                    <div id="box__mtb">
-                        <button class="boxes__select" >
+                    <div>
+                        <div class="boxes__bike" >
                             <img class="boxes__img" src="img/mtb.png" alt="Rower MTB">
-                        </button>
+                        </div>
                         <p class="boxes__title">MTB</p>
                     </div>
     
-                    <div id="box__road">
-                        <button class="boxes__select">
+                    <div>
+                        <div class="boxes__bike boxes__bike--big">
                             <img class="boxes__img" src="img/szosa.png" alt="Rower Szosowy">
-                        </button>
-                        <p class="boxes__title">Szosowy</p>
+                        </div>
+                        <p class="boxes__title boxes__title--bold">Szosowy</p>
                     </div>
     
-                    <div id="box__cross">
-                        <button class="boxes__select">
+                    <div>
+                        <div class="boxes__bike">
                             <img class="boxes__img" src="img/cross.png" alt="Rower Crossowy">
-                        </button>
+                        </div>
                         <p class="boxes__title">Cross</p>
                     </div>
 
-                    <img class="arrow" src="img/line.png" alt="strzalka">
-                    <div class="break"></div>
-                    <h1 class="bike-build__title">Budowa</h1>
-                    <div class="bike-build__box">
-                        <img class="bike-build__img" src="img/budowa.png" alt="Budowa roweru szosowego">
-                    </div>
+                    
+                    
+
                 </section>                
             </section>
+
+            <img class="arrow" src="img/line.png" alt="strzalka">
+
+            <section>
+                <h1 class="bike-build__title">Budowa</h1>
+                <div class="bike-build__box">
+                    <img class="bike-build__img" src="img/budowa.png" alt="Budowa roweru szosowego">
+                </div>
+            </section>
+
         </main>
         <footer>
-
+            <p>Adrian Ściepura nr. indeksu: 193350</p>
         </footer>
     </body>
 </html>
