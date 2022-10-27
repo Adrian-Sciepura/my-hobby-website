@@ -205,6 +205,7 @@ footer
 
 .activity
 {
+    cursor: pointer;
     width: 100%;
     height: 500px;
     border-width: 0;
@@ -213,6 +214,7 @@ footer
     box-shadow: 0 0 25px -10px black;
     margin-top: 40px;
     opacity: 0.9;
+    transition: height .35s ease-in-out;
 }
 
 .activity__top
@@ -240,9 +242,10 @@ footer
 
 .activity__img
 {
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 15px 10px 15px 10px;
 }
+
 
 .activity__img--horizontal
 {
@@ -279,20 +282,23 @@ footer
     padding-top: 12px;
 }
 
-.activity:focus .activity__bottom
+.activity:focus .activity__bottom, .activity:focus-within .activity__bottom
 {
     display: inline;
 }
 
-.activity:focus
+.activity:focus, .activity:focus-within
 {
+    cursor: default;
     height: auto;
     opacity: 1;
 }
 
-.activity:hover
+.activity__media
 {
-    opacity: 1;
+    width: 250px;
+    height: 50px;
+    margin: 10px;
 }
 
 .activity__gallery
@@ -301,4 +307,5 @@ footer
     flex-wrap: wrap;
     justify-content: center;
     max-width: 900px;
+    margin-bottom: 25px;
 }
