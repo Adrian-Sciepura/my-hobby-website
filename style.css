@@ -24,12 +24,14 @@ body
 {
     width: 128px;
     height: 128px;
+    animation: bike 12s infinite forwards;
 }
 
 .navigation
 {
     background-color: #FF8853;
     border-radius: 30px;
+    margin-bottom: 50px;
     min-width: 1000px;
     width: fit-content;
     margin-left: auto;
@@ -84,13 +86,19 @@ body
     margin-top: 10px;
 }
 
-
 .section-title
 {
     color: #FE6019;
     font-size: 40px;
     font-weight: 300;
     text-align: center;
+}
+
+.section-title--smaller
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .wrapper
@@ -308,4 +316,88 @@ footer
     justify-content: center;
     max-width: 900px;
     margin-bottom: 25px;
+}
+
+.questions
+{
+    display: inline;
+}
+
+.questions__name
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.questions__row
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.questions__row .questions__name:last-child
+{
+    margin-right: 0px;
+}
+
+.questions__field
+{
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.questions__button
+{
+    height: 50px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-right: 20px;
+}
+
+.questions__row .questions__button:last-child
+{
+    margin-right: 0px;
+}
+
+#questions__text
+{
+    border-radius: 10px;
+}
+
+@keyframes bike {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        color: rgb(252, 162, 162);
+        transform: translateX(215px) scale(0.5) translateY(100px);
+    }
+    20%{
+        transform: translateX(215px) scale(0.5) translateY(100px) rotate(90deg);
+    }
+    30%{
+        transform: translateX(215px) translateY(180px) scale(0.5) rotate(90deg);
+    }
+    40%{
+        transform: translateX(215px) translateY(180px) scale(0.5) rotate(180deg);
+    }
+    50%{
+        transform: translateX(-845px) translateY(180px) scale(0.5) rotate(180deg);   
+    }
+    60%{
+        transform: translateX(-845px) translateY(180px) scale(0.5) rotate(270deg);
+    }
+    70%{
+        transform: translateX(-845px) translateY(50px) scale(0.5) rotate(270deg);
+    }
+    80%{
+        transform: translateX(-845px) translateY(50px) scale(0.5);
+    }
 }

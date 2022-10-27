@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kolarstwo Szosowe</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo__title">Kolarstwo Szosowe</h1>
+                <img class="logo__img" src="img/logo.png">
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link " href="index.html">Strona Główna</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="myActivities.html">Moje Wyprawy</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Słynni kolarze</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#">Ankieta</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="wrapper">
+            <h1 class="section-title">Powiedz coś o sobie</h1>
+            <form class="questions">
+                <h1 class="section-title section-title--smaller">Podstawowe informacje</h1>
+                <div class="questions__row">
+                    <label class="questions__name">Imię <input class="questions__field" type="text"></label>
+                    <label class="questions__name">Nazwisko <input class="questions__field" type="text"></label>
+                </div>
+                <div class="questions__row">
+                    <label class="questions__name">E-mail <input class="questions__field" type="email"></label>
+                    <label class="questions__name">Nr telefonu <input class="questions__field" type="tel"></label>
+                </div>
+                <h1 class="section-title section-title--smaller">Płeć</h1>
+                <div class="questions__row">
+                    <label class="questions__name"><input type="radio" name="gender">Mężczyzna</label>
+                    <label class="questions__name"><input type="radio" name="gender">Kobieta</label>
+                </div>
+                <h1 class="section-title section-title--smaller">Na jakim rowerze jeździsz?</h1>
+                <div class="questions__row">
+                    <label class="questions__name"><input type="checkbox" name="bike-type">Szosowy</label>
+                    <label class="questions__name"><input type="checkbox" name="bike-type">MTB</label>
+                    <label class="questions__name"><input type="checkbox" name="bike-type">Cross</label>
+                </div>
+                <h1 class="section-title section-title--smaller">Wiadomość do autora</h1>
+                <div class="questions__row">
+                    <textarea id="questions__text" rows="4" cols="50"></textarea>
+                </div>
+                <div class="questions__row">
+                    <button class="questions__button" type="submit">Wyślij</button>
+                    <button class="questions__button" type="reset">Wyczyść</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>Adrian Ściepura nr. indeksu: 193350</p>
+        </footer>
+    </body>
+</html>
