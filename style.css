@@ -269,14 +269,14 @@ footer
     border-radius: 30px;
     background-color: #242729;
     box-shadow: 0 0 25px -10px black;
-    margin-top: 50px;
-    opacity: 0.9;
+    margin-top: 80px;
+    opacity: 0.8;
 }
 
 .activity__top
 {
     width: 100%;
-    margin: 25px 0px 25px 0px;
+    padding-top: 20px;
     max-height: 500px;
     display: flex;
     align-items: center;
@@ -285,8 +285,9 @@ footer
 .activity__bottom
 {
     display: none;
-    max-height: 300px;
-    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .activity__logo
@@ -294,23 +295,6 @@ footer
     max-height: 450px;
     border-radius: 20px;
     margin-left: 20px;
-}
-
-.activity__img
-{
-    border-radius: 8px;
-    margin: 15px 10px 15px 10px;
-}
-
-
-.activity__img--horizontal
-{
-    max-width: 85%;
-}
-
-.activity__img--vertical
-{
-    max-height: 300px;
 }
 
 .activity__text
@@ -338,18 +322,6 @@ footer
     padding-top: 12px;
 }
 
-.activity:focus .activity__bottom, .activity:focus-within .activity__bottom
-{
-    display: inline;
-}
-
-.activity:focus, .activity:focus-within
-{
-    cursor: default;
-    height: auto;
-    opacity: 1;
-}
-
 .activity__media
 {
     width: 250px;
@@ -357,13 +329,35 @@ footer
     margin: 10px;
 }
 
-.activity__gallery
+.gallery
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     max-width: 900px;
-    margin-bottom: 25px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.gallery__link
+{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__img
+{
+    border-radius: 8px;
+    margin: 15px 10px 15px 10px;
+}
+
+.gallery__img--horizontal
+{
+    max-width: 85%;
+}
+
+.gallery__img--vertical
+{
+    max-height: 300px;
 }
 
 .questions

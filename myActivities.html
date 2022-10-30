@@ -8,12 +8,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script src="activity-expander.js"></script>
     </head>
-    <body>
+    <body onload="load()">
         <header>
             <div class="logo">
                 <h1 class="logo__title">Kolarstwo Szosowe</h1>
-                <img class="logo__img" src="img/logo.png">
+                <img class="logo__img" src="img/logo.png" alt="logo">
             </div>
             <nav class="navigation">
                 <ul class="navigation__list">
@@ -33,7 +34,7 @@
         </header>
         <main class="wrapper">
             <section>
-                <button class="activity">
+                <div class="activity" onclick="expand(this)">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map1.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -50,18 +51,19 @@
                         </div>
                     </div>
                     <div class="activity__bottom">
-                        <p class="activity__title">________________________</p>
-                        <a href="https://www.strava.com/activities/5669625734" target="_blank"><img class="activity__media" src="img/strava.svg"></a>
-                        <div class="activity__gallery">
-                            <a href="./img/routes/route1/1.jpg" target="_blank"><img class="activity__img activity__img--horizontal" src="img/routes/route1/1.jpg" alt="photo1"></a>
-                            <a href="./img/routes/route1/2.jpg" target="_blank"><img class="activity__img activity__img--horizontal" src="img/routes/route1/2.jpg" alt="photo2"></a>
+                        <p class="activity__title">___________________________</p>
+                        <a href="https://www.strava.com/activities/5669625734" target="_blank"><img class="activity__media" src="img/strava.svg" alt="strava logo"></a>
+                        <div class="gallery">
+                            <a class="gallery__link" href="./img/routes/route2/1.jpg" target="_blank"><img class="gallery__img gallery__img--horizontal" src="img/routes/route1/1.jpg" alt="photo1"></a>
+                            <a class="gallery__link" href="./img/routes/route2/1.jpg" target="_blank"><img class="gallery__img gallery__img--horizontal" src="img/routes/route1/2.jpg" alt="photo2"></a>
                         </div>
+                    
                     </div>
-                </button>
+                </div>
             </section>
 
             <section>
-                <button class="activity">
+                <div class="activity" onclick="expand(this)">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map2.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -79,21 +81,21 @@
                     </div>
                     <div class="activity__bottom">
                         <p class="activity__title">________________________</p>
-                        <a href="https://www.strava.com/activities/5721421069" target="_blank"><img class="activity__media" src="img/strava.svg"></a>
-                        <div class="activity__gallery">
-                            <a href="./img/routes/route2/1.jpg" target="_blank"><img class="activity__img activity__img--horizontal" src="img/routes/route2/1.jpg" alt="photo1"></a>
-                            <a href="./img/routes/route2/2.jpg" target="_blank"><img class="activity__img activity__img--vertical" src="img/routes/route2/2.jpg" alt="photo2"></a>
-                            <a href="./img/routes/route2/3.jpg" target="_blank"><img class="activity__img activity__img--vertical" src="img/routes/route2/3.jpg" alt="photo3"></a>
-                            <a href="./img/routes/route2/4.jpg" target="_blank"><img class="activity__img activity__img--vertical" src="img/routes/route2/4.jpg" alt="photo4"></a>
-                            <a href="./img/routes/route2/5.jpg" target="_blank"><img class="activity__img activity__img--vertical" src="img/routes/route2/5.jpg" alt="photo5"></a>
-                            <a href="./img/routes/route2/6.jpg" target="_blank"><img class="activity__img activity__img--vertical" src="img/routes/route2/6.jpg" alt="photo6"></a>
+                        <a href="https://www.strava.com/activities/5721421069" target="_blank"><img class="activity__media" src="img/strava.svg" alt="strava logo"></a>
+                        <div class="gallery">
+                            <a class="gallery__link" href="./img/routes/route2/1.jpg" target="_blank"><img class="gallery__img gallery__img--horizontal" src="img/routes/route2/1.jpg" alt="photo1"></a>
+                            <a class="gallery__link" href="./img/routes/route2/2.jpg" target="_blank"><img class="gallery__img gallery__img--vertical" src="img/routes/route2/2.jpg" alt="photo2"></a>
+                            <a class="gallery__link" href="./img/routes/route2/3.jpg" target="_blank"><img class="gallery__img gallery__img--vertical" src="img/routes/route2/3.jpg" alt="photo3"></a>
+                            <a class="gallery__link" href="./img/routes/route2/4.jpg" target="_blank"><img class="gallery__img gallery__img--vertical" src="img/routes/route2/4.jpg" alt="photo4"></a>
+                            <a class="gallery__link" href="./img/routes/route2/5.jpg" target="_blank"><img class="gallery__img gallery__img--vertical" src="img/routes/route2/5.jpg" alt="photo5"></a>
+                            <a class="gallery__link" href="./img/routes/route2/6.jpg" target="_blank"><img class="gallery__img gallery__img--vertical" src="img/routes/route2/6.jpg" alt="photo6"></a>
                         </div>
                     </div>
-                </button>
+                </div>
             </section>
 
             <section>
-                <button class="activity">
+                <div class="activity" onclick="expand(this)">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map3.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -111,16 +113,16 @@
                     </div>
                     <div class="activity__bottom">
                         <p class="activity__title">________________________</p>
-                        <a href="https://www.strava.com/activities/7410151072" target="_blank"><img class="activity__media" src="img/strava.svg"></a>
-                        <div class="activity__gallery">
-                            <img class="activity__img activity__img--horizontal" src="img/image-none.jpg" alt="none photos">
+                        <a href="https://www.strava.com/activities/7410151072" target="_blank"><img class="activity__media" src="img/strava.svg" alt="strava logo"></a>
+                        <div class="gallery">
+                            <img class="gallery__img gallery__img--horizontal" src="img/image-none.jpg" alt="none photos">
                         </div>
                     </div>
-                </button>
+                </div>
             </section>
 
             <section>
-                <button class="activity">
+                <div class="activity" onclick="expand(this)">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map4.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -138,16 +140,16 @@
                     </div>
                     <div class="activity__bottom">
                         <p class="activity__title">________________________</p>
-                        <a href="https://www.strava.com/activities/3930905753" target="_blank"><img class="activity__media" src="img/strava.svg"></a>
-                        <div class="activity__gallery">
-                            <img class="activity__img activity__img--horizontal" src="img/image-none.jpg" alt="none photos">
+                        <a href="https://www.strava.com/activities/3930905753" target="_blank"><img class="activity__media" src="img/strava.svg" alt="strava logo"></a>
+                        <div class="gallery">
+                            <img class="gallery__img gallery__img--horizontal" src="img/image-none.jpg" alt="none photos">
                         </div>
                     </div>
-                </button>
+                </div>
             </section>
 
             <section>
-                <button class="activity">
+                <div class="activity" onclick="expand(this)">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map5.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -165,16 +167,16 @@
                     </div>
                     <div class="activity__bottom">
                         <p class="activity__title">________________________</p>
-                        <a href="https://www.strava.com/activities/4234295038" target="_blank"><img class="activity__media" src="img/strava.svg"></a>
-                        <div class="activity__gallery">
-                            <img class="activity__img activity__img--horizontal" src="img/image-none.jpg" alt="none photos">
+                        <a href="https://www.strava.com/activities/4234295038" target="_blank"><img class="activity__media" src="img/strava.svg" alt="strava logo"></a>
+                        <div class="gallery">
+                            <img class="gallery__img gallery__img--horizontal" src="img/image-none.jpg" alt="none photos">
                         </div>
                     </div>
-                </button>
+                </div>
             </section>
 
             <section>
-                <button class="activity">
+                <div class="activity" onclick="expand(this)">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map6.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -192,14 +194,14 @@
                     </div>
                     <div class="activity__bottom">
                         <p class="activity__title">________________________</p>
-                        <a href="https://www.strava.com/activities/6533276304" target="_blank"><img class="activity__media" src="img/strava.svg"></a>
-                        <a href="https://www.zwift.com/activity/993410356971864080" target="_blank"><img class="activity__media" src="img/zwift.svg"></a>
-                        <div class="activity__gallery">
-                            <a href="./img/routes/route6/1.jpg" target="_blank"><img class="activity__img activity__img--horizontal" src="img/routes/route6/1.jpg" alt="photo1"></a>
-                            <a href="./img/routes/route6/2.png" target="_blank"><img class="activity__img activity__img--horizontal" src="img/routes/route6/2.png" alt="photo2"></a>
+                        <a href="https://www.strava.com/activities/6533276304" target="_blank"><img class="activity__media" src="img/strava.svg" alt="strava logo"></a>
+                        <a href="https://www.zwift.com/activity/993410356971864080" target="_blank"><img class="activity__media" src="img/zwift.svg" alt="zwift logo"></a>
+                        <div class="gallery">
+                            <a class="gallery__link" href="./img/routes/route6/1.jpg" target="_blank"><img class="gallery__img gallery__img--horizontal" src="img/routes/route6/1.jpg" alt="photo1"></a>
+                            <a class="gallery__link" href="./img/routes/route6/2.png" target="_blank"><img class="gallery__img gallery__img--horizontal" src="img/routes/route6/2.png" alt="photo2"></a>
                         </div>
                     </div>
-                </button>
+                </div>
             </section>
         </main>
         <footer>
