@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kolarstwo Szosowe</title>
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,32 +16,36 @@
                 <h1 class="logo__title">Kolarstwo Szosowe</h1>
                 <img class="logo__img" src="img/logo.png" alt="logo">
             </div>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link" href="index.html">Strona Główna</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="myActivities.html">Moje Wyprawy</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="competitions.html">Zawody</a>
-                        <div class="sub-list">
-                            <ul class="sub-list__list">
-                                <li class="sub-list__item"><a class="navigation__link" href="competitions.html#Tour_de_France">Tour de France</a></li>
-                                <li class="sub-list__item"><a class="navigation__link" href="competitions.html#Tour_de_Pologne">Tour de Pologne</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navigation__item navigation__item--current"><a class="navigation__link" href="form.html">Ankieta</a></li>
-                </ul>
-            </nav>
         </header>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="index.html">Strona Główna</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="myActivities.html">Moje Wyprawy</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="competitions.html">Zawody</a>
+                    <div class="sub-list">
+                        <ul class="sub-list__list">
+                            <li class="sub-list__item"><a class="navigation__link" href="competitions.html#Tour_de_France">Tour de France</a></li>
+                            <li class="sub-list__item"><a class="navigation__link" href="competitions.html#Tour_de_Pologne">Tour de Pologne</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navigation__item navigation__item--current"><a class="navigation__link" href="form.html">Ankieta</a></li>
+            </ul>
+        </nav>
         <main class="wrapper">
             <h1 class="section-title">Powiedz coś o sobie</h1>
             <form class="questions">
                 <h1 class="section-title section-title--smaller">Podstawowe informacje</h1>
                 <div class="questions__row">
                     <label class="questions__name">imię <input class="questions__field" type="text"></label>
+                </div>
+                <div class="questions__row">
                     <label class="questions__name">nazwisko <input class="questions__field" type="text"></label>
                 </div>
                 <div class="questions__row">
                     <label class="questions__name">e-mail <input class="questions__field" type="email"></label>
+                </div>
+                <div class="questions__row">
                     <label class="questions__name">nr telefonu <input class="questions__field" type="tel"></label>
                 </div>
                 <h1 class="section-title section-title--smaller">Płeć</h1>

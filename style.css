@@ -32,8 +32,7 @@ body
     background-color: #FF8853;
     border-radius: 30px;
     margin-bottom: 50px;
-    min-width: 1000px;
-    width: fit-content;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,7 +43,7 @@ body
     color: white;
     text-align: center;
     font-size: 24px;
-    font-weight: 600; 
+    font-weight: 600;
     padding: 5px 80px 5px 80px;
 }
 
@@ -256,8 +255,10 @@ footer
     align-items: center;
     background-color: #1d1f21;
     color: white;
+    font-size: 16px;
     margin-top: 60px;
-    height: 50px;
+    height: auto;
+    width: 100%;
 }
 
 .activity
@@ -475,5 +476,158 @@ footer
     }
     80%{
         transform: translateX(-845px) translateY(50px) scale(0.5);
+    }
+}
+
+@media (max-width: 500px)
+{
+    .logo__title
+    {
+        font-size: 32px;
+        margin: 8px;
+    }
+
+    .logo__img
+    {
+        display: none;
+    }
+
+    .wrapper
+    {
+        width: 90%;
+    }
+
+    .navigation
+    {
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        border-radius: 0px 0px 10px 10px;
+        z-index: 3;
+    }
+
+    .navigation__list
+    {
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .navigation__item
+    {
+        margin: 0px;
+    }
+
+    .sub-list
+    {
+        width: 100px;
+    }
+
+    .regular-text
+    {
+        font-size: 12px;
+    }
+
+    .section-title
+    {
+        font-size: 20px;
+    }
+
+    .section-title--smaller
+    {
+        font-size: 15px;
+    }
+
+    .boxes__bike
+    {
+        width: 90px;
+        height: 90px;
+        border-radius: 12px;
+    }
+    
+    .boxes__bike--big
+    {
+        width: 130px;
+        height: 130px;
+    }
+
+    .arrow
+    {
+        margin-top: 0px;
+        margin-bottom: 60px;
+        height: 120px;
+    }
+
+    .table td,th
+    {
+        font-size: 9px;
+    }
+    
+    .regular-list
+    {
+        font-size: 12px;
+    }
+
+    .activity
+    {
+        width: 100%;
+        height: 200px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    .activity__logo
+    {
+        height: 180px;
+        margin-left: 10px;
+    }
+
+    .activity__top
+    {
+        height: 200px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .activity__title
+    {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .activity__point
+    {
+        font-size: 9px;
+        padding-top: 2px;
+    }
+
+    .activity__media
+    {
+        width: 150px;
+    }
+
+    .gallery__img--vertical
+    {
+        width: 80px;
+    }
+
+    footer
+    {
+        font-size: 12px;
+    }
+
+    .questions__name
+    {
+        font-size: 15px;
+    }
+
+    .questions__field
+    {
+        width: 150px;
+    }
+
+    .questions__button
+    {
+        font-size: 18px;
+        width: 100px;
     }
 }
