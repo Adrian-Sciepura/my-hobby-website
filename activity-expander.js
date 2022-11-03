@@ -1,50 +1,41 @@
-var page = window.screen.width;
-var start_height = "";
-window.load = load;
-window.onresize = resize;
+window.onload = load;
+sessionStorage.setItem('active_item', '-1')
 
-function size()
+function expand(element)
 {
-    if(page > 500)
+    var active = sessionStorage.getItem('active_item');
+    var width = window.screen.width;
+    var element_height = '';
+    if(width > 500)
     {
-        start_height = "500px";
+        element_height = '500px';
     }
     else
     {
-        start_height = "200px";
+        element_height = '200px';
     }
 
-    const elements = document.getElementsByClassName("activity");
-    for(var i of elements)
-    {
-        i.style.height = start_height;
-    }
-}
-
-function resize()
-{
-    page = window.screen.width;
-    size();
-
-}
-
-function expand(element){
-    const height = element.style.height;
-    if(height == start_height)
+    if(active != element.id)
     {
         element.style.height = "auto";
         element.style.opacity = "1";
         element.children[1].style.display = "flex";
+        sessionStorage.setItem('active_item', element.id);
     }
     else
     {
-        element.style.height = start_height;
+        element.style.height = element_height;
         element.children[1].style.display = "none";
         element.style.opacity = "0.8";
+        sessionStorage.setItem('active_item', '-1')
     }
 }
 
 function load()
 {
-    size();
+    let elements = document.getElementsByClassName("activity");
+    for(i = 0; i < elements.length; i++)
+    {
+        elements[i].id = 'a'+i;
+    }
 }
