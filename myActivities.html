@@ -9,9 +9,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script src="activity-expander.js"></script>
+        <script src="scripts/activity-expander.js"></script>
+        <script src="scripts/jquery-3.6.1.min.js"></script>
+        <script src="scripts/scroll.js"></script>
+        <script src="scripts/jquery.scrollTo.min.js"></script>
     </head>
     <body>
+        <div id="scroll-up">
+            <span>^</span>
+        </div>>
         <header>
             <div class="logo">
                 <h1 class="logo__title">Kolarstwo Szosowe</h1>
@@ -35,7 +41,7 @@
         </nav>
         <main class="wrapper">
             <section>
-                <div class="activity" onclick="expand(this)" id="x">
+                <div class="activity" id="x">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map1.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -64,7 +70,7 @@
             </section>
 
             <section>
-                <div class="activity" onclick="expand(this)">
+                <div class="activity">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map2.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -96,7 +102,7 @@
             </section>
 
             <section>
-                <div class="activity" onclick="expand(this)">
+                <div class="activity">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map3.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -123,7 +129,7 @@
             </section>
 
             <section>
-                <div class="activity" onclick="expand(this)">
+                <div class="activity">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map4.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -150,7 +156,7 @@
             </section>
 
             <section>
-                <div class="activity" onclick="expand(this)">
+                <div class="activity">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map5.jpg" alt="mapa trasy">
                         <div class="activity__text">
@@ -177,7 +183,7 @@
             </section>
 
             <section>
-                <div class="activity" onclick="expand(this)">
+                <div class="activity">
                     <div class="activity__top">
                         <img class="activity__logo" src="img/maps/map6.jpg" alt="mapa trasy">
                         <div class="activity__text">

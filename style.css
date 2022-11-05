@@ -5,6 +5,30 @@ body
     margin: 0;
 }
 
+#scroll-up
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #FF8853;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#scroll-up:hover
+{
+    background-color: #FE6019;
+}
+
 .logo
 {
     display: flex;
@@ -237,6 +261,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
     background-color: #242729;
     box-shadow: 0 0 25px -10px black ;
     border-width: 0;
@@ -263,9 +288,8 @@ footer
 
 .activity
 {
-    cursor: pointer;
     width: 100%;
-    height: 500px;
+    height: auto;
     border-width: 0;
     border-radius: 30px;
     background-color: #242729;
@@ -278,6 +302,7 @@ footer
 {
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
     max-height: 500px;
     display: flex;
     align-items: center;
@@ -285,7 +310,7 @@ footer
 
 .activity__bottom
 {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
@@ -481,6 +506,14 @@ footer
 
 @media (max-width: 500px)
 {
+    #scroll-up
+    {
+        font-size: 20px;
+        width: 32px;
+        height: 32px;
+        z-index: 3;
+    }
+
     .logo__title
     {
         font-size: 32px;
@@ -570,7 +603,7 @@ footer
     .activity
     {
         width: 100%;
-        height: 200px;
+        height: auto;
         padding: 0px;
         margin-top: 30px;
     }
