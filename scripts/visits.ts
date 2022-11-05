@@ -1,6 +1,7 @@
-window.onload = load;
+window.onload = load_visits;
 
-function load(): void {  
+function load_visits(): void 
+{  
     var storage = localStorage.getItem('visits');
     var visits: number = storage == null ? 0 : parseInt(storage); 
     var wrapper = document.querySelector('.wrapper');
